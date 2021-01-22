@@ -1,0 +1,164 @@
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 20px;
+  p {
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: bold;
+  }
+}
+
+.startQuiz {
+  margin: 10vh auto;
+  p {
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  button {
+    width: fit-content;
+    height: 5vh;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid black;
+    background: white;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      background: white;
+      color: green;
+      box-shadow: 0 1px 0 2px green;
+    }
+  }
+}
+
+.quesContainer {
+  display: flex;
+  padding: 50px;
+  margin-top: 5vh;
+  flex-direction: column;
+  background-color: #222831;
+}
+
+.question {
+  display: flex;
+  margin: 5vh 0;
+  justify-content: space-between;
+  p {
+    font-size: 1.3rem;
+    color: white;
+  }
+}
+
+.diff {
+  text-align: end;
+  p {
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+  }
+}
+
+.optContainer {
+  div {
+    display: flex;
+    padding: 8px;
+    pre {
+      margin: 10px 0;
+      padding-top: 18px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: white;
+    }
+    p {
+      height: 40px;
+      width: 50%;
+      padding: 8px;
+      margin: 10px 40px;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      border: none;
+      border: 1px solid black;
+      background: #30475e;
+      color: white;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+.selecAns {
+  margin-top: 5vh;
+  pre {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  p {
+    font-size: 1.2rem;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 2px 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+  }
+}
+
+.navBtn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.btn {
+  width: fit-content;
+  margin: 10px auto;
+  button {
+    height: 50px;
+    width: 100px;
+    padding: 8px;
+    margin: 0 50px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid black;
+    background: white;
+    color: black;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      background: white;
+      color: #30475e;
+      box-shadow: 0 1px 0 2px #30475e;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+    margin-left: 250px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
