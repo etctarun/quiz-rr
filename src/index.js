@@ -2,14 +2,12 @@ import React from "react";
 import "./index.module.css";
 import ReactDOM from "react-dom";
 import App from "./App";
-import Latex from "./Latex";
+
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Latex>
-      <App />
-    </Latex>
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
