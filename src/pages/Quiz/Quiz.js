@@ -27,6 +27,8 @@ const Quiz = (props) => {
     },
   ]);
 
+  const okie = " expression 4.x^2 - 3.x.y ";
+
   const history = useHistory();
 
   const getData = (val) => {
@@ -244,6 +246,7 @@ const Quiz = (props) => {
         </div>
       ) : (
         <div className={styles.startQuiz}>
+          <p>\({okie}\)</p>
           <p>. THE QUIZ HAS 4 QUESTIONS</p>
           <p>. YOU CAN CHANGE YOUR ANSWERS BEFORE SUBMITING THE QUIZ</p>
           <button onClick={startQuiz}>Start Quiz</button>
